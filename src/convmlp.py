@@ -106,6 +106,6 @@ def convmlp_m(pretrained=False, progress=False, classifier_head=True, *args, **k
 
 def convmlp_l(pretrained=False, progress=False, classifier_head=True, *args, **kwargs):
     return _convmlp('convmlp_l', pretrained=pretrained, progress=progress,
-                    blocks=[4, 8, 3], mlp_ratios=[3, 3, 3], dims=[192, 384, 768],
+                    blocks=[4, 16, 3], mlp_ratios=[3, 3, 3], dims=[192, 384, 768],
                     channels=96, n_conv_blocks=3, classifier_head=classifier_head,
                     *args, **kwargs)
